@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GreatFrontEnd Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Card | GreatFrontEnd Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+</head>
 
-    <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
-  </head>
-  <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- 
-      Sarah Dole
-      Front End Engineer @ Microsoft
-      I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.
-      Contact me
-     -->
-
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
-      >.
+<body>
+  <div class="card">
+    <img src="./img/profile.png" alt="avatar" class="card__avatar" />
+    <div>
+      <h1 class="card__name">Sarah Dole</h1>
+      <h2 class="card__headline">Front End Engineer @ Microsoft</h2>
     </div>
-    <script src="js/index.js"></script>
-  </body>
+    <p class="card__text">I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT
+      developer.</p>
+    <a href="mailto:artur_kulembetov@outlook.com">
+      <button class="card__button">Contact me</button>
+    </a>
+    <div class="card__footer">
+      <a href="https://github.com/kulembetov/" class="card__footer__link" target="_blank">
+        <img src="./img/github-logo.svg" alt="github logo">
+      </a>
+      <a href="https://linkedin.com/in/kulembetov" class="card__footer__link" target="_blank">
+        <img src="./img/linkedin-logo.svg" alt="linkedin logo">
+      </a>
+      <a href="https://instagram.com/artur_kulembetov" class="card__footer__link" target="_blank">
+        <img src="./img/instagram-logo.svg" alt="instagram logo">
+      </a>
+      <a href="https://twitter.com/arturkulembetov" class="card__footer__link" target="_blank">
+        <img src="./img/twitter-logo.svg" alt="twitter logo">
+      </a>
+    </div>
+  </div>
+
+  <div class="credits">
+    A challenge by
+    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank" class="credits__link"
+      aria-label="Link to GreatFrontEnd Projects challenge page">GreatFrontEnd
+      Projects</a>. Built by
+    <a href="https://www.greatfrontend.com/projects/u/kulembetov" target="_blank" class="credits__link"
+      aria-label="Link to Artur Kulembetov's GreatFrontEnd profile">Artur
+      Kulembetov</a>.
+  </div>
+</body>
+
 </html>
